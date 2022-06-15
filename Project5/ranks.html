@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+    background-color: lightsteelblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  background-color: lightskyblue;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color:wheat;}
+</style>
+</head>
+<body>
+
+<h2>Next Week's Rankings</h2>
+
+<p>Use the form below to inquire about any players not ranked in the top 10 of their position.</p>
+<form action="http://examples.funwebdev.com/process.php" method="post" target="_blank">
+    <fieldset>
+        <legend>Players Outside Top 10</legend>
+        <select id="position-select">
+            <optgroup label="Position">
+                <option>Quarterback</option>
+                <option>Running Back</option>
+                <option>Wide Receiver</option>
+            </optgroup>
+        </select>
+        <p></p>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,}"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,}"><br><br>
+        <p>Check the stats which you'd like to see stat projections for.</p>
+        <input type="checkbox" id="stats1" name="yards" value="Total Yards">
+        <label for="vehicle1"> Total Yards</label><br>
+        <input type="checkbox" id="stats2" name="TDs" value="Total Touchdowns">
+        <label for="vehicle2"> Total Touchdowns</label><br>
+        <input type="checkbox" id="stats3" name="touches" value="Total Touches">
+        <label for="vehicle3"> Total Touches</label>
+        <p>Add any other stats/projections you would like to know about the player.</p>
+        <textarea name="message" style="width:500px; height:100px;"></textarea>
+        <p></p>
+        <input type="submit" value="Submit">
+        <input type ="reset">
+    </fieldset>
+  </form>
+
+
+<table>
+    <caption>Quarterbacks</caption>
+  <tr>
+    <th>Rank</th>
+    <th>Player</th>
+    <th>Projected FPS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Josh Allen</td>
+    <td>24.6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Lamar Jackson</td>
+    <td>24.5</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Kyler Murray</td>
+    <td>24.2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Patrick Mahomes</td>
+    <td>24.0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Dak Prescott</td>
+    <td>22.4</td>
+  </tr>
+  <td>6</td>
+    <td>Tom Brady</td>
+    <td>22.2</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Jalen Hurts</td>
+    <td>21.1</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Kirk Cousins</td>
+    <td>21.1</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Matthew Stafford</td>
+    <td>20.8</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Russell Wilson</td>
+    <td>20.7</td>
+</table>
+
+<table>
+    <caption>Running Backs</caption>
+  <tr>
+    <th>Rank</th>
+    <th>Player</th>
+    <th>Projected FPS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Derrick Henry</td>
+    <td>20.8</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Alvin Kamara</td>
+    <td>18.0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Aaron Jones</td>
+    <td>16.7</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Saquon Barkley</td>
+    <td>16.4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Austin Ekeler</td>
+    <td>16.0</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Ezekiel Elliott</td>
+    <td>15.9</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Najee Harris</td>
+    <td>15.6</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Darrell Henderson</td>
+    <td>14.8</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>James Robinson</td>
+    <td>14.8</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>D'Andre Swift</td>
+    <td>14.5</td>
+  </tr>
+</table>
+
+<table>
+    <caption>Wide Receivers</caption>
+  <tr>
+    <th>Rank</th>
+    <th>Player</th>
+    <th>Projected FPS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Davante Adams</td>
+    <td>18.6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Tyreek Hill</td>
+    <td>17.4</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Cooper Kupp</td>
+    <td>17.4</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Justin Jefferson</td>
+    <td>16.0</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Stefon Diggs</td>
+    <td>15.9</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>D.J. Moore</td>
+    <td>15.9</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Deebo Samuel</td>
+    <td>14.8</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>A.J. Brown</td>
+    <td>14.3</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Terry McLaurin</td>
+    <td>14.1</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Adam Thielen</td>
+    <td>14.1</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<button onClick="newsletterform()">
+  Click to register for access to special newsletters!
+</button>
+<p id="down"></p>
+<script>
+  var down = document.getElementById("down");
+  var br = document.createElement("br"); 
+
+  function newsletterform() {
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "http://examples.funwebdev.com/process.php");
+
+    var FN = document.createElement("input");
+    FN.setAttribute("type", "text");
+    FN.setAttribute("name", "FullName");
+    FN.setAttribute("placeholder", "Full Name");
+
+    var DOB = document.createElement("input");
+    DOB.setAttribute("type", "text");
+    DOB.setAttribute("name", "dob");
+    DOB.setAttribute("placeholder", "DOB");
+
+    var EID = document.createElement("input");
+    EID.setAttribute("type", "text");
+    EID.setAttribute("name", "emailID");
+    EID.setAttribute("placeholder", "E-Mail ID");
+
+    var PWD = document.createElement("input");
+    PWD.setAttribute("type", "password");
+    PWD.setAttribute("name", "password");
+    PWD.setAttribute("placeholder", "Password");
+
+    var RPWD = document.createElement("input");
+    RPWD.setAttribute("type", "password");
+    RPWD.setAttribute("name", "reTypePassword");
+    RPWD.setAttribute("placeholder", "ReEnter Password");
+
+    var s = document.createElement("input");
+    s.setAttribute("type", "submit");
+    s.setAttribute("value", "Submit");
+      
+    form.appendChild(FN); 
+    form.appendChild(br.cloneNode()); 
+    form.appendChild(DOB); 
+    form.appendChild(br.cloneNode()); 
+    form.appendChild(EID); 
+    form.appendChild(br.cloneNode()); 
+    form.appendChild(PWD); 
+    form.appendChild(br.cloneNode()); 
+    form.appendChild(RPWD); 
+    form.appendChild(br.cloneNode()); 
+    form.appendChild(s); 
+    document.getElementsByTagName("body")[0]
+    .appendChild(form);
+    }
+</script>

@@ -1,0 +1,72 @@
+:root {
+  --back-color:rgb(50, 49, 49);
+  --primary-color: #f9ffee;
+  --header-back: #1a1d24;
+  --header-text: #eeeeee;
+}
+
+* {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--primary-color);
+}
+
+h2.center {
+  color: var(--header-text);
+}
+
+h3.center {
+  color: var(--header-text);
+}
+
+h4.center {
+  color: var(--primary-color);
+}
+
+h4 {
+  color: white;
+}
+
+h5.stats {
+  color: black;
+}
+
+h5.center {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+a:link {
+	text-decoration: none;
+	color: var(--primary-color);
+  }
+  
+  a:visited {
+	text-decoration: none;
+	color:var(--primary-color);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: lightgreen;
+    }
+    
+    a:active {
+    text-decoration: underline;
+    }
+
+body {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+}
+header {
+  background-color: var(--header-text);
+  color: var(--header-text);
+}
+
+.box img {
+  border: 2px solid var(--primary-color);
+}
